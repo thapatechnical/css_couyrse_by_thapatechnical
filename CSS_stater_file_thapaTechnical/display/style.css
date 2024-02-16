@@ -1,0 +1,111 @@
+/** ------------------------------------- -->
+/**  DISPLAY IN CSS  
+/** ---------------------------------------- -->
+
+/*todo  Block-Level Elements: */
+/*?  display: block 👉 The block value makes the element a block-level element. Block-level elements create a new "block formatting context" and take up the full width available. They start on a new line, pushing subsequent elements below them. */
+
+/*? New Line Start: They start on a new line in the webpage layout.
+Full Width: They often take up the entire width of their container.
+No Side-by-Side: They don't sit next to each other horizontally.
+Common Examples: Include paragraphs, headings, lists, and containers.
+Vertical Stacking: They stack on top of each other, creating a vertical layout. */
+
+/* Use Cases:
+Creating standalone elements like paragraphs, headings, divs, and dividers.
+Structuring the main content of a webpage, such as articles or sections.  */
+
+/** ------------------------------------------------------------------------------------------------------ */
+
+/*todo Inline Elements: */
+
+/*? display: inline  👉 The inline value makes the element an inline-level element. Inline elements only take up as much width as necessary, and they do not create a new block formatting context. Inline elements can appear on the same line as other inline elements. */
+
+/* Inline Flow: They flow within the content and don't start on new lines.
+Space-Efficient: They take up only as much width as necessary.
+Side-by-Side: They can sit next to each other horizontally.
+Common Examples: Include links, spans, and emphasis tags.
+Text Enhancements: Often used for styling text or adding small inline elements. */
+
+/* Use Cases:
+Styling text elements like links (<a>) or spans within paragraphs.
+Displaying elements side by side within a paragraph. */
+
+/** ------------------------------------------------------------------------------------------------------ */
+
+/*todo Inline-Block Elements: */
+
+/*? display: inline-block 👉  The inline-block value combines aspects of both block and inline. Elements with inline-block behave like inline elements but can have dimensions (width and height) and vertical alignment. */
+
+/* Mixed Behavior: They combine aspects of both inline and block elements.
+Width and Height: You can set their dimensions (width and height).
+In-Line Flow: They can sit next to each other horizontally.
+Space-Efficient: They take up only as much width as necessary.
+Common Examples: Used for creating custom-styled buttons, images with captions, and 
+
+Use Cases:
+Creating custom-styled buttons.
+Displaying images with captions or descriptions next to them. */
+
+/** ------------------------------------------------------------------------------------------------------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Urbanist;
+}
+
+body {
+  padding: 50px 100px;
+  background-color: hsla(0, 0%, 94%);
+}
+
+#main-heading {
+  color: #1e1403;
+  text-align: left;
+  font-size: 64px;
+  margin-bottom: 30px;
+}
+
+p {
+  width: 500px;
+  margin: 0 auto;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  background: linear-gradient(to right, #182848, #4b6cb7);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 30px 20px;
+  margin-bottom: 24px;
+}
+
+/** ------------------------------------- -->
+/**  INTERVIEW QUESTIONS  
+/** ---------------------------------------- -->
+
+/*? 1: What is the main difference between display: block; and display: inline; elements in CSS? */
+
+/*? 1: What does display: none; do to an element's accessibility? */
+/* It makes the element completely inaccessible to screen readers and keyboard navigation. */
+
+/*? 3: How do you center an element horizontally using display: block;? */
+/* To center a display: block; element horizontally, you can set its left and right margins to auto. */
+
+/*? 4: What is the default behavior of display: inline; elements with regard to margin and padding? */
+/* display: inline; elements don't respect top and bottom margins or padding, only left and right. Also width and height is not accepted */
+
+/*? 5: How can you make an inline element like a link or a span act like a block-level element? ⭐⭐*/
+/* You can apply display: block; or display: inline-block; to make an inline element behave like a block-level element. */
+
+/*? 6: What is the impact of applying display: block; to an anchor <a> element? */
+/* Applying display: block; to an anchor element allows you to set its width, height, and apply padding or margin. This is often used for creating custom-styled buttons. */

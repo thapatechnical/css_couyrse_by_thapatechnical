@@ -1,0 +1,70 @@
+/** ------------------------------------- -->
+/**  COLUMN LAYOUT IN CSS  
+/** ---------------------------------------- -->
+
+/* The CSS multi-column layout allows easy definition of multiple columns of text - just like in newspapers */
+/* 
+column-count
+column-gap
+column-rule-style
+column-rule-width
+column-rule-color
+column-rule
+column-span
+column-width */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 94%);
+  display: grid;
+  place-items: center;
+}
+
+.hero-section {
+  margin-top: 100px;
+  width: 60%;
+}
+
+h1 {
+  font-family: "Urbanist", sans-serif;
+  font-size: 54px;
+  font-weight: 900;
+  /*? text properties starts here  */
+  text-align: left;
+  /* text-decoration-line: underline;
+    -moz-text-decoration-line: underline; */
+  text-decoration-style: double;
+  -moz-text-decoration-style: double;
+  text-decoration-color: #61677a;
+  -moz-text-decoration-color: #61677a;
+  text-decoration-thickness: 2px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+p {
+  font-family: "Urbanist", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  /*? text properties starts here  */
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  line-height: 1.6;
+  /* white-space: nowrap; all the text will be in one line  */
+}
+
+p {
+  column-count: 3;
+  column-rule: 4px solid red;
+  /* column-rule-color: red;
+  column-rule-style: dotted;
+  column-rule-width: 10px; */
+  column-gap: 50px;
+  text-align: justify;
+}

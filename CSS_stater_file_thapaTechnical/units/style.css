@@ -1,0 +1,56 @@
+/** ------------------------------------- -->
+/**  UNITS IN CSS 
+/** ---------------------------------------- -->
+
+/** Absolute Lengths:  The absolute length units are fixed and a length expressed in any of these will appear as exactly that size. */
+
+/** Relative Lengths: Relative length units specify a length relative to another length property. Relative length units scale better between different rendering medium. */
+
+/*? Pixels (px): px is an absolute unit of measurement in CSS, representing the smallest unit of screen space.
+It provides a fixed and consistent size on all devices and screens. */
+
+/*? Percentages (%): Percentages are relative units based on the parent element's size or the containing block.
+Widely used in creating responsive layouts.
+Example: width: 50%; sets an element's width to 50% of its parent's width. */
+
+/*? Em (em): em is a relative unit that is calculated based on the font size of the parent element.
+When you set an element's size in em, it's relative to the font size of its nearest parent with a specified font size. */
+
+/*? Root Em (rem): rem is also a relative unit like em, but it's based on the font size of the root (html) element.
+Using rem ensures that the size is consistent throughout the entire document, making it especially useful for responsive design. */
+
+/** ------------------------------------- -->
+/**  IMPORTANT TIPS + NOTES
+/** ---------------------------------------- -->
+
+/*? px provides fixed sizes and is not recommended for responsive design as it doesn't adapt to different screen sizes and font settings. However, it can be useful for precise control over small elements. */
+
+/*? em is useful for relative sizing within the context of the parent element's font size. It allows for more flexible and scalable designs. */
+
+/*? rem is the preferred choice for responsive design as it offers a consistent relative size based on the root font size. It's easier to maintain and provides better scalability. */
+
+/** ---------------------------------------- --> */
+
+body {
+  background-color: hsl(0, 0%, 94%);
+}
+
+/*? for Pixels  */
+
+/*? for Percentages  100% = 16px  */
+/* 1px = 6.25% */
+
+/*? for 1 em  = 16px */
+
+/*? for 1 rem = we can specify the font size of our will */
+/* we need 1rem = 10px, it makes our life easy  */
+
+/** ------------------------------------- -->
+/**  INTERVIEW QUESTIONS
+/** ---------------------------------------- -->
+
+/*? 1: What is the main difference between em and rem units in CSS? */
+
+/*? 2: How does using rem units in your CSS benefit a responsive web design?  ⭐⭐⭐ */
+
+/*? 3: Can you explain how the font-size property in em units works when nested within parent elements with different font sizes? */

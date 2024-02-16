@@ -1,0 +1,109 @@
+/** ------------------------------------- -->
+/**  TRANSITION IN CSS 
+/** ---------------------------------------- --> */
+
+/*? transition-property: Specifies which CSS properties should be transitioned.
+Example: Transitioning the color and background-color properties.
+.element {
+  transition-property: color, background-color;
+} */
+
+/*? transition-duration: Defines how long the transition should take to complete.
+Example: Transitioning over 1 second.
+.element {
+  transition-duration: 1s;
+} */
+/* it accept s and ms values too 
+Transition options: */
+
+/*? 3: transition-timing-function: Specifies the timing curve used for the transition.
+Example: Using ease-in-out for a smooth start and end.
+.element {
+  transition-timing-function: ease-in-out;
+} */
+
+/*? 4:transition-delay: Sets a delay before the transition starts.
+Example: Starting the transition after 0.5 seconds. */
+
+/** ------------------------------------- -->
+/**  NOTES + TIPS 
+/** ---------------------------------------- --> */
+
+/** shorthand property of all 4 is simply to write transition */
+/* property name | duration | easing function | delay */
+/*? transition: margin-right 4s ease-in-out 1s; */
+
+/** ---------------------------------------- --> */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost";
+}
+
+body {
+  background-color: #080a0c;
+  color: azure;
+  height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  max-width: 1320px;
+  padding: 64px 0;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  gap: 64px;
+}
+
+.grid-two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  text-align: left;
+}
+
+.hero-content p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 20px 0 40px 0;
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+}
+
+a {
+  background-color: transparent;
+  display: inline-block;
+  padding: 12px 32px;
+  text-decoration: none;
+  border-radius: 05px;
+  font-size: 24px;
+  font-weight: bold;
+  border: 5px solid #fff;
+  color: #fff;
+  width: 200px;
+  text-align: center;
+  /*?TRANSITION CODE STARTS HERE*/
+}
+
+/** ------------------------------------- -->
+/**  INTERVIEW QUESTIONS
+/** ---------------------------------------- --> */
+
+/* ? 1: Create a button that changes its background color smoothly to blue when hovered over.  */
+
+/* ? 2: Implement a transition effect that gradually increases the size of an image from 100px to 200px when hovered.  */
+
+/* ? 3: Create a card with a smooth box-shadow transition that adds a shadow when hovered and removes it when not hovered.  */

@@ -1,0 +1,111 @@
+/** ------------------------------------- -->
+/** LATEST PSEUDO CLASSES
+/** ---------------------------------------- --> */
+
+/* !important ->  https://caniuse.com/ */
+
+/*? :is() Pseudo-Class (or :matches()):
+The :is() pseudo-class allows you to select elements that match any of the provided selectors.
+It's particularly useful when you want to apply the same styles to multiple selectors without repeating the styles. */
+
+/*? :where() Pseudo-Class:
+The :where() pseudo-class is similar to :is() and allows you to select elements that match any of the provided selectors.
+It's typically used when you want to group selectors without applying specific styles. */
+
+/*? :has() Pseudo-Class:
+The :has() pseudo-class selects elements that contain a specific element or set of elements that match the provided selector.
+It's currently not well-supported in modern browsers and may not be widely used in practice. */
+
+/*? :not() Pseudo-Class:
+The :not() pseudo-class allows you to select elements that do not match the provided selector.
+It's commonly used to exclude specific elements from being styled. */
+
+/** ---------------------------------------- --> */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist";
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.section-about,
+.section-testimonial {
+  background-color: #000;
+}
+
+/* use shorthand  */
+
+.section-about .grid h1,
+.section-about .grid p,
+.section-testimonial .grid h1,
+.section-testimonial .grid p {
+  color: #fff;
+}
+
+/* :where(.section-about, .section-testimonial) .grid :where(h1, p) {
+  color: yellow;
+} */
+
+:is(.section-about, .section-testimonial) .grid :is(h1, p) {
+  color: yellow;
+}
+
+.parent:has([type="checkbox"]:checked) label {
+  color: red;
+}
+
+input[type="checkbox"] {
+  accent-color: pink;
+  width: 50px;
+  aspect-ratio: 1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+p,
+label {
+  font-size: 20px;
+}
+
+/* navbar  */
+header {
+  padding: 3.6rem 0;
+}
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  font-size: 2rem;
+  list-style: none;
+  border: 1px solid red;
+}
+
+nav ul :not(li:first-child) {
+  padding-left: 50px;
+}
+
+/* not will come here  */
+
+/** ------------------------------------- -->
+/** LATEST PSEUDO CLASSES
+/** ---------------------------------------- --> */
+
+/*? 1: What the difference between :is() and :where()  */
+/* :where() has no specificity. 
+:is() takes the specificity of its most specific selector. */

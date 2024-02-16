@@ -1,0 +1,129 @@
+/** ------------------------------------- -->
+/**  NOTES + TIPS 
+/** ---------------------------------------- --> */
+
+/*? animation-name: This property specifies the name of the keyframe animation you want to apply to an element.
+Example: animation-name: myAnimation; */
+
+/*? animation-duration: Sets the duration of the animation in seconds (s) or milliseconds (ms).
+Example: animation-duration: 2s; */
+
+/*? animation-timing-function: Defines the timing function that determines the acceleration and deceleration of the animation.
+Common values include ease, linear, ease-in, ease-out, ease-in-out, and more.
+Example: animation-timing-function: ease-in-out; */
+
+/*? animation-delay: Specifies a delay before the animation starts. It can be in seconds (s) or milliseconds (ms).
+Example: animation-delay: 1s; */
+
+/*? animation-iteration-count: Sets the number of times the animation should repeat. You can use values like infinite, 3, or 2n (for even iterations).
+Example: animation-iteration-count: infinite; */
+
+/*? animation-direction: Determines whether the animation runs forwards, backward, or alternates between forward and backward cycles.
+Values include normal, reverse, alternate, and alternate-reverse.
+Example: animation-direction: alternate;  */
+
+/* very Important  */
+
+/*? @keyframes:
+This is not a property but a rule used to define the animation's keyframes. Keyframes specify how the element should look at various points during the animation. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost";
+}
+
+body {
+  background-color: #2b3033;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  padding: 50px;
+  color: #fff;
+  font-size: 48px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #4861ec;
+  box-shadow: 0 0 0px 15px #353f6d;
+  margin: 50px;
+  display: inline-block;
+  border-radius: 50%;
+  /*? animation start here  */
+  animation-name: trip;
+  animation-duration: 2.5s;
+  animation-timing-function: linear;
+  /* animation-delay: 2s; */
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  /* animation-fill-mode: backwards; */
+}
+
+/* @keyframes lefttoright {
+  from {
+    translate: 0%;
+  }
+  to { */
+/* translate: 90vw; */
+/* translate: calc(90vw - 100px);
+  }
+} */
+
+/* @keyframes lefttoright {
+  0% {
+    translate: 0%;
+  }
+  50% {
+    translate: 50vw 50vh;
+  }
+  100% {
+    translate: calc(90vw - 100px);
+  }
+} */
+
+@keyframes trip {
+  0% {
+    background-color: #ffbb5cb5;
+    transform: translate(200px, 0%);
+  }
+  25% {
+    background-color: #fcbf49;
+    transform: translate(calc(90vw - 10%));
+  }
+  50% {
+    background-color: #000000;
+    transform: translate(calc(90vw - 10%), 500px);
+  }
+  75% {
+    background-color: #fcbf49;
+    transform: translate(20%, 500px);
+  }
+  100% {
+    background-color: #ffbb5cb5;
+    transform: translate(20%, 0%);
+  }
+}
+
+/** ------------------------------------- -->
+/**  INTERVIEW QUESTIONS
+/** ---------------------------------------- --> */
+
+/*? 1: In CSS animations, is it necessary to use the :hover or  pseudo-class to trigger animations, or can animations be applied to elements on page load without user interaction? */
+/* No need to use hover or anything.  */
+
+/*? 2: Explain the @keyframes rule in CSS animations.
+The @keyframes rule is used to define the animation sequence by specifying styles at various points during the animation's duration. */
+
+/*? 3: What is the purpose of the animation-fill-mode property?
+animation-fill-mode determines how styles are applied to elements before and after the animation. Options include none, forwards, backwards, and both. */
+
+/*? 4:How do you create an animation that reverses its direction when it reaches the end using CSS?
+You can achieve this by setting the animation-direction property to alternate or alternate-reverse. */

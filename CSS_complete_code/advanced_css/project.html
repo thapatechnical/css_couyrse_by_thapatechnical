@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lunar Eclipse</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #ffe4d6;
+        width: 100vw;
+        height: 100vh;
+        /* display: grid;
+        place-items: center; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .universe {
+        width: 40vw;
+        aspect-ratio: 1;
+        background-color: #ffbb5c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        animation: skychange 8s ease infinite;
+      }
+
+      @keyframes skychange {
+        0% {
+          background-color: #ffbb5cb5;
+        }
+        25% {
+          background-color: #fcbf49;
+        }
+        50% {
+          background-color: #000000;
+        }
+        75% {
+          background-color: #fcbf49;
+        }
+        100% {
+          background-color: #ffbb5cb5;
+        }
+      }
+
+      .sun {
+        width: 18vw;
+        aspect-ratio: 1;
+        background-color: #e25e3e;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: inherit;
+          aspect-ratio: 1;
+          border-radius: inherit;
+          background-color: #000;
+          animation: moonwalk 8s ease-in-out infinite;
+        }
+      }
+
+      @keyframes moonwalk {
+        0% {
+          translate: 100%;
+          scale: 1;
+        }
+        50% {
+          translate: 0%;
+          scale: 0.95;
+          box-shadow: rgba(255, 255, 255, 0.5) 0px 48px 100px 0px;
+        }
+        100% {
+          translate: -100%;
+          scale: 0.9;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="universe">
+      <div class="sun"></div>
+    </div>
+  </body>
+</html>

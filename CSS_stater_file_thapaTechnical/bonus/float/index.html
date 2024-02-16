@@ -1,0 +1,80 @@
+<!-- *  ---------------------- -->
+<!-- *  FLOAT IN CSS
+<!-- * ----------------------- -->
+
+<!--* The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. The element is removed from the normal flow of the page, though still remaining a part of the flow -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>float</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        width: 100%;
+        height: 10vh;
+        background-color: #451952;
+        color: #fff;
+
+        & .container {
+          width: 90vw;
+          margin: 0 auto;
+        }
+
+        & a {
+          color: #fff;
+          font-size: 20px;
+        }
+
+        & .logo-brand {
+          width: 30%;
+          /* height: inherit; */
+          line-height: 10vh;
+          /* background-color: #ae445a; */
+          float: left;
+          text-align: center;
+        }
+
+        & .navbar-nav {
+          width: 70%;
+          /* height: inherit; */
+          line-height: 10vh;
+          /* background-color: #662549; */
+          float: right;
+          text-align: right;
+
+          & ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 0 25px;
+            /* border: inset 5px solid red; */
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo-brand">
+          <a href="#">THAPA TECHNICAL </a>
+        </div>
+        <nav class="navbar-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>

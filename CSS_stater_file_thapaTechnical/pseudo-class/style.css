@@ -1,0 +1,148 @@
+/** ------------------------------------- -->
+/** Pseudo Classes in CSS
+/** ---------------------------------------- --> */
+
+/*? 1. Link (`a:link`): This is the default state for an unvisited link. */
+
+/*? 2. Visited (`a:visited`): This state applies to a link that the user has already visited. */
+
+/*? 3. Hover (`a:hover`): This state triggers when the user hovers their mouse pointer over a link. */
+
+/*? 4. Active (`a:active`): This state is triggered when the user clicks on a link. */
+
+/*? 5: :hover - This pseudo-class is used for styling an element when a user hovers their mouse over it. */
+/* a:hover {    color: #A78295; Change text color on hover   } */
+
+/*? 6: :first-child - Selects the first child element of its parent. */
+
+/*? 7: :last-child - Selects the last child element of its parent. */
+
+/*? 8: :nth-child(n) - Selects elements based on their position within a parent element, where "n" is a numeric value. */
+
+/*? 9: :first-of-type - Selects the first element of its type within its parent. */
+
+/*? 10: :last-of-type - Selects the last element of its type within its parent. */
+
+/*? 11: :nth-of-type(n) - Selects elements of a specified type based on their position within a parent. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost";
+}
+
+body {
+  color: azure;
+  height: 100vh;
+}
+
+.hero-section {
+  background-color: #080a0c;
+}
+
+.container {
+  height: 100vh;
+  max-width: 1320px;
+  padding: 64px 0;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+}
+
+.section-elements {
+  padding-bottom: 100px;
+}
+
+.section-elements .container {
+  height: 50vh;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: #080a0c;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  gap: 6.4rem;
+}
+
+.grid-two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero-content h1 {
+  text-align: left;
+  font-size: 54px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 2rem 0 4rem 0;
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+}
+
+.hero-content a {
+  background-color: #fff;
+  display: inline-block;
+  padding: 10px 32px;
+  text-transform: capitalize;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.content-1,
+.content-2 {
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  font-size: 48px;
+}
+
+/*? List of Pseudo Class  */
+
+.hero-content a:link {
+  color: rgb(10, 10, 10);
+}
+
+.hero-content a:visited {
+  color: #d67e03;
+}
+
+.hero-content a:hover {
+  color: #0062ff;
+}
+
+.hero-content a:active {
+  color: #f31559;
+}
+
+/** ------------------------------------- -->
+/** Important Notes
+/** ---------------------------------------- --> */
+/* The :last-child pseudo-class selects an element if it's the last child within its parent element. It doesn't work if there are other elements after it within the same parent. */
+
+/*? after last of type child let them know about first child too   */
+
+/* The :first-child pseudo-class works similarly to :last-child, but it selects the first child element within its parent. Just like :last-child, it will only select an element if it's the first child and not if there are other elements before it within the same parent. */
+
+/** ------------------------------------- -->
+/** Let's learn something new
+/** ---------------------------------------- --> */

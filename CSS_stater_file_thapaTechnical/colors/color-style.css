@@ -1,0 +1,38 @@
+/** ------------------------------------- -->
+/**  COLORS IN CSS  
+/** ---------------------------------------- -->
+
+/*? Color Properties: CSS provides several ways to define colors. You can use named colors (e.g., "red"), hexadecimal values (e.g., "#FF5733"), RGB values (e.g., "rgb(255, 87, 51)"), or HSL values. Understanding how to apply colors to text and backgrounds is essential for creating visually appealing designs. */
+
+/** ------------------------------------ -->
+/**  Notes: Colors using Various Notations
+/** ------------------------------------ -->
+
+/*? Named Colors: You can use named colors, which are predefined color keywords. */
+
+/*? RGB Colors: RGB (Red, Green, Blue) values allow you to define colors by specifying the amount of red, green, and blue in the color. */
+
+/*? RGBA Colors: RGBA is similar to RGB but includes an alpha channel for opacity control. */
+/* alpha - 0 - 1 */
+
+/*? Hexadecimal Colors: You can specify colors using hexadecimal values. */
+
+/** ------------------------------------ -->
+/**  MORE ON COLORS
+/** ------------------------------------ -->
+
+/*? HSL Colors: HSL (Hue, Saturation, Lightness) values provide a way to specify colors based on their hue, saturation, and lightness. */
+
+/*? HSLA Colors: Similar to HSL, HSLA includes an alpha channel for opacity control. */
+
+/** ------------------------------------- -->
+/**  INTERVIEW QUESTIONS  
+/** ---------------------------------------- -->
+
+/*? 1: What is the difference between rgb() and rgba() color notations in CSS? */
+/* rgb() notation specifies a color using the red, green, and blue channels without transparency.
+rgba() notation is an extension of rgb() and includes an additional alpha channel to specify transparency. It stands for "red, green, blue, alpha.  */
+
+/*? 2: How can you make the text color of an element fully transparent using CSS? Provide an example. */
+
+/*? 3: How can you set the text color of an element to match the current color of another CSS property within the same element? */

@@ -1,0 +1,96 @@
+/** ------------------------------------- -->
+/**  CSS SPECIFICITY
+/** ---------------------------------------- --> */
+
+/*? CSS specificity is a concept that determines which CSS rules are applied to an HTML element when multiple conflicting rules exist. It helps browsers decide which style declarations should take precedence when more than one rule targets the same element. Specificity is a fundamental part of understanding CSS, and it's crucial for resolving styling conflicts */
+
+/* Every CSS selector has its place in the specificity hierarchy.
+
+? There are Five categories which define the specificity level of a selector:
+
+-!important  - Example  <h1 style="color: red!important;"> 
+Inline styles - Example: <h1 style="color: red;">
+IDs - Example: #navbar
+Classes, pseudo-classes, attribute selectors - Example: .test, :hover, [href]
+Elements and pseudo-elements - Example: h1, ::before */
+
+/** ------------------------------------- -->
+/**  CSS SPECIFICITY - TIPS
+/** ---------------------------------------- --> */
+
+/*? Avoid overusing !important since it can lead to difficult-to-maintain code. */
+/*? Use specific selectors when necessary, but strive for a balanced and maintainable approach. */
+
+/** ---------------------------------------- --> */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost";
+}
+
+body {
+  background-color: #080a0c;
+  color: azure;
+  height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  max-width: 1320px;
+  padding: 64px 0;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  gap: 6.4rem;
+}
+
+.grid-two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero-content h1 {
+  text-align: left;
+  font-size: 54px;
+}
+
+h1 {
+  color: red;
+}
+
+.hero-content p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 2rem 0 4rem 0;
+  color: pink;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-content a {
+  background-color: #fff;
+  display: inline-block;
+  padding: 10px 32px;
+  text-transform: capitalize;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+a {
+  color: #080a0c;
+}

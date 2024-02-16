@@ -1,0 +1,35 @@
+/** ------------------------------------- -->
+/**  RADIAL GRADIENTS
+/** ---------------------------------------- --> */
+
+/*? The radial-gradient() function sets a radial gradient as the background image.
+
+A radial gradient is defined by its center.
+
+To create a radial gradient you must define at least two color stops. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  /* background-image: radial-gradient(circle, red 20%, yellow 40%, green 40%); */
+  /* background-image: repeating-radial-gradient(#ff5733, #ffc300, #a8df8e 250px); */
+}
+
+/*? Differently Spaced Color Stops */
+
+/*? Set the Shape */
+
+/**-----------------------
+/** Interview Question  
+/** ----------------------- */
+
+/*? 1: create a repeating radial gradient in CSS? */
+/* background-image: repeating-radial-gradient(#ff5733, #ffc300 , #A8DF8E ); */
+
+/*? 2: Create a CSS-only radial gradient that creates a circular pattern of colors with smooth transitions between them. */

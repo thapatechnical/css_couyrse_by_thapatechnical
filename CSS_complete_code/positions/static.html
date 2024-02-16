@@ -1,0 +1,92 @@
+<!--* ------------------------------------- -->
+<!--*  POSITION FIXED/STICKY IN CSS   -->
+<!--* ---------------------------------------- -->
+
+<!--? Static (position: static;):
+This is the default value for all elements.
+
+Elements with position: static; are positioned according to the normal document flow.
+They are not affected by the top, right, bottom, or left properties. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+        font-family: "Urbanist", sans-serif;
+      }
+
+      body {
+        display: grid;
+        place-items: center;
+      }
+
+      #main-heading {
+        font-size: 6.2rem;
+        color: #1e1403;
+        margin: 3rem 0;
+      }
+
+      /* box model css  */
+      .parent-div {
+        width: 1000px;
+        height: 700px;
+        background-color: #5e9de9;
+        color: #fff;
+        /* border: 5px solid #003180; */
+        background: linear-gradient(to right, #514a9d, #24c6dc);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        border-radius: 15px;
+      }
+
+      .child {
+        width: 150px;
+        height: 150px;
+        background: linear-gradient(to right, #93edc7, #1cd8d2);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        display: grid;
+        place-items: center;
+        font-size: 3.2rem;
+        color: #003180;
+      }
+
+      .child:nth-child(2),
+      .child:nth-child(4) {
+        background: linear-gradient(to right, #3cd3ad, #4cb8c4);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+
+      .parent-div {
+        position: relative;
+      }
+
+      .child-2 {
+        /* position: absolute; */
+        /* left: 50%; */
+        margin-left: 50%;
+        margin-top: 60%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="main-heading">CSS Positions- Static & Relative</h1>
+    <hr />
+    <br />
+    <section class="parent-div">
+      <div class="child child-1">child 1</div>
+      <div class="child child-2">child 2</div>
+      <div class="child child-3">child 3</div>
+      <div class="child child-4">child 4</div>
+    </section>
+  </body>
+</html>

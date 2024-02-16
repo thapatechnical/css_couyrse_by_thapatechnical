@@ -1,0 +1,95 @@
+/** ------------------------------------- -->
+/**  PADDING IN CSS
+/** ---------------------------------------- --> */
+
+/*? Padding is used to create space around an element's content, inside of any defined borders.  */
+
+/*? 1. Uniform Padding:
+    padding: 10px;  
+    👉   This sets 10 pixels of padding on all sides of the element. */
+
+/*? 2. Vertical and Horizontal Padding:  
+    padding: 5px 10px;  
+    👉  This sets 5 pixels of padding on the top and bottom sides and 10 pixels on the right and left sides. */
+
+/*? top | left and right | bottom */
+/* padding: 1px 2px 2px; */
+
+/*? top | right | bottom | left */
+/* padding: 5px 1px 0 2px; */
+
+/*? 1. Individual Padding: */
+
+/* padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    This sets different padding values for each side of the element. */
+
+/** Use Cases: */
+
+/* - Spacing Elements: Padding is commonly used to add space between an element's content and its border, creating separation between elements on a web page.
+
+- Button Styling: Padding is used to control the spacing inside buttons, making them visually appealing and comfortable to click.
+
+- Text and Images: Padding can be applied to text and images to create spacing around them, improving readability and aesthetics.
+
+- Responsive Design: Padding can be adjusted to create responsive layouts, ensuring content is appropriately spaced on different screen sizes.
+
+- Creating Boxes and Panels: Padding is essential for defining the spacing inside boxes, panels, and containers.
+
+In summary, the `padding` property in CSS is a versatile tool for controlling the spacing around an element's content. By using different values and techniques, you can achieve precise control over the layout and spacing of elements on your web page, improving both aesthetics and usability. */
+
+/** ---------------------------------------- --> */
+
+/* * {
+  padding: 0;
+} */
+
+html {
+  font-family: Urbanist;
+}
+
+body {
+  padding: 0 5rem;
+}
+
+#main-heading {
+  padding: 4rem 0;
+  color: #1e1403;
+}
+
+p {
+  line-height: 1.6;
+  letter-spacing: 1px;
+  font-size: 18px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* box model css  */
+.section-padding {
+  background: linear-gradient(to right, #3a7bd5, #00d2ff);
+  color: #fff;
+  border: 10px solid #003b99;
+  /*? Apply to all four sides */
+  /* padding: 100px; */
+
+  /*? top and bottom | left and right */
+  /* padding: 100px 150px; */
+
+  /*? top | right | bottom | left */
+  /* padding: 100px 150px 50px 200px; */
+  padding-top: -300px;
+  padding-right: 150px;
+  padding-bottom: 50px;
+  padding-left: 200px;
+}
+
+/** ------------------------------------- -->
+/**  INTERVIEW QUESTIONS 
+/** ---------------------------------------- --> */
+
+/*? 1: How do you set padding for all sides of an HTML element using shorthand notation? */
+
+/*? 2: What is the purpose of negative padding in CSS, and can you provide an example? */
+/* Negative padding is not a standard CSS property. Padding is always a positive value to create space around an element's content. Negative margins, on the other hand, can be used to overlap elements. */

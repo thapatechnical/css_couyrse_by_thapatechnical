@@ -1,0 +1,87 @@
+/** ------------------------------------- -->
+/**  ANCHOR STATES STYLING IN CSS
+/** ---------------------------------------- --> */
+
+/*? 1. Link (`a:link`): This is the default state for an unvisited link. */
+
+/*? 2. Visited (`a:visited`): This state applies to a link that the user has already visited. */
+
+/*? 3. Hover (`a:hover`): This state triggers when the user hovers their mouse pointer over a link. */
+
+/*? 4. Active (`a:active`): This state is triggered when the user clicks on a link. */
+
+/*? LVHA: This acronym represents the order of link states. */
+
+/* L for Link (:link): The default state for unvisited links.
+V for Visited (:visited): The state for links that the user has already visited.
+H for Hover (:hover): The state triggered when the mouse hovers over a link.
+A for Active (:active): The state activated when a user clicks on a link. */
+
+/* You can remember the order by recalling the word "LVHA," which represents the sequence of link states. This can help you remember the order and apply styles more easily in your CSS. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost";
+}
+
+body {
+  background-color: #080a0c;
+  color: azure;
+  height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  max-width: 1320px;
+  padding: 64px 0;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  gap: 6.4rem;
+}
+
+.grid-two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero-content h1 {
+  text-align: left;
+  font-size: 54px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 2rem 0 4rem 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-content a {
+  color: #080a0c;
+}
+
+.hero-content a:link {
+  background-color: #fff;
+  display: inline-block;
+  padding: 10px 32px;
+  text-transform: capitalize;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}

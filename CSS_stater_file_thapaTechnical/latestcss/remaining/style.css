@@ -1,0 +1,100 @@
+/** ------------------------------------- -->
+/**  NEW CSS FEATURES CSS
+/** ---------------------------------------- --> */
+
+/*? The border-inline CSS property is a shorthand property for setting the individual logical block border property values in a single place in the style sheet. */
+
+/* border-inline: 1px solid red  */
+/* This property is a shorthand for the following CSS properties:
+border-inline-color
+border-inline-style
+border-inline-width */
+
+/*? The border-block CSS property is a shorthand property for setting the individual logical block border property values in a single place in the style sheet. */
+/* border-block: 1px solid red  */
+/* This property is a shorthand for the following CSS properties:
+border-block-color
+border-block-style
+border-block-width */
+
+/*? CSS Nesting: The CSS nesting module defines a syntax for nesting selectors, providing the ability to nest one style rule inside another, with the selector of the child rule relative to the selector of the parent rule.  */
+
+/*? The writing-mode property specifies whether lines of text are laid out horizontally or vertically. */
+/* writing-mode: horizontal-tb|vertical-rl|vertical-lr; */
+
+/** ---------------------------------------- --> */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost";
+}
+
+body {
+  background-color: #080a0c;
+  color: azure;
+  height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  max-width: 1320px;
+  padding: 64px 0;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  gap: 6.4rem;
+}
+
+.grid-two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* .hero-content h1 {
+  text-align: left;
+  font-size: 54px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 2rem 0 4rem 0;
+} */
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-content a {
+  background-color: #fff;
+  display: inline-block;
+  padding: 10px 32px;
+  text-transform: capitalize;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/* new features here  */
+
+h1 {
+  /* border: 5px solid red; */
+  /* border-top: 5px solid red;
+  border-bottom: 5px solid red; */
+  /* border-left: 5px solid yellow;
+  border-right: 5px solid yellow; */
+  /* border-inline: 5px solid yellow; */
+  border-block: 5px solid red;
+}

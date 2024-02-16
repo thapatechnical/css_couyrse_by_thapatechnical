@@ -1,0 +1,136 @@
+/** ------------------------------------- -->
+/**  FLEXBOX IN CSS
+/** ---------------------------------------- --> */
+
+/*? Flexbox is a one-dimensional layout model that helps you distribute space along a single axis (either horizontally or vertically) in a flexible and efficient way. It allows you to align and distribute elements within a container, making it easier to create complex layouts without using floats or positioning.  */
+
+/** ----------- Flex Container Properties (Parent) ----------- */
+
+/*? 1:  Flex Container (display: flex;):
+To create a flexbox layout, you need a flex container. Apply display: flex; to the container element.
+.flex-container {
+  display: flex;
+} */
+
+/*? 2: Flex Items:
+Elements inside the flex container are called flex items.
+Flex items can be aligned and distributed along the main axis (horizontal or vertical). */
+
+/*? 3: Main Axis and Cross Axis:
+/** In a flex container,  one axis is considered the main axis, and the other is the cross axis. You can set the main axis to be either horizontal (row) or vertical (column). */
+
+/*? Flex Direction (flex-direction): Use flex-direction to specify the direction to either main axis or cross-axis.
+Values: row, row-reverse, column, column-reverse.
+.flex-container {
+  flex-direction: row; /* Horizontal main axis (default) 
+} */
+
+/*? if the flex-direction:row then horizontal will be main-axis 
+if flex-direction:column the vertical part will be main-axis and horizontal axis become the cross axis  */
+
+/*? Items display in a row (the flex-direction property's default is row). */
+
+/*? 4: Justify Content (justify-content): justify-content aligns flex items along the main axis.
+Values include flex-start, flex-end, center, space-between, and space-around. */
+
+/*? 5: Align Items (align-items):
+align-items aligns flex items along the cross axis.
+Values include flex-start, flex-end, center, stretch, and baseline. */
+
+/*? 6: flex-wrap:
+- Specifies whether flex items should wrap to the next line when they overflow the container.
+/** - Values: nowrap (default), wrap, wrap-reverse. */
+
+/*? 7: align-content:
+- Aligns multiple lines of flex items when there is extra space along the cross axis.
+- Values: flex-start, flex-end, center, space-between, space-around, stretch. */
+
+/** ------------- Flex Item Properties (children) ------------ */
+/*? a. order:
+- Determines the order in which a flex item appears relative to other flex items within the container.
+- Lower values come first. */
+
+/*? b. flex-grow:
+- Specifies how much a flex item should grow to fill available space along the main axis.
+- Default value is 0, meaning it won't grow. */
+
+/*? c. flex-shrink:
+- Specifies how much a flex item should shrink when there isn't enough space along the main axis.
+- Default value is 1, meaning it will shrink. */
+
+/*? d. flex-basis:
+- Defines the initial size of a flex item along the main axis.
+- Default value is auto, which means the item's size is determined by its content. */
+
+/*? e. flex (Shorthand for flex-grow, flex-shrink, and flex-basis):
+- Combines the three flex item properties in one declaration. */
+
+/** ---------- Alignment Properties (Self) ---------------- */
+
+/*? a. align-self:
+- Overrides the align-items property for an individual flex item.
+- Allows you to align a single item differently from others. */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Urbanist", sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: hsl(0, 0%, 96%);
+}
+
+#main-heading {
+  font-size: 6.2rem;
+  color: #1e1403;
+  margin: 3rem 0;
+}
+
+.flex-container {
+  width: 60%;
+  height: auto;
+  padding: 50px 0;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  background: linear-gradient(to right, #514a9d, #24c6dc);
+  color: #fff;
+
+  /* flexbox container properties */
+}
+
+/** ------------------------------------- -->
+/**  INTERVIEW QUESTIONS IN CSS
+/** ---------------------------------------- --> */
+
+/*? 1: How do you center a div or text both horizontally and vertically using Flexbox? ⭐⭐⭐⭐⭐ */
+/* To center items horizontally, you can use justify-content: center; on the flex container. */
+/* To center items vertically, you can use align-items: center; on the flex container. */
+
+/* .item {
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(to right top, #004d7a, #00bf72, #a8eb12);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 1.6rem;
+    flex: auto;
+  } */
+
+/* Here I will show them first how to center the text inplace of grid  */
+/* then delete the 3 div and let it be one and centering that div  */
+
+/*? 2: How do you reorder flex items without changing their HTML structure? */
+/* You can use the order property on flex items. Lower values move items to the beginning of the container, while higher values move items to the end. */
+
+/*? 3: Create a vertical navigation menu using Flexbox where the menu items are centered both horizontally and vertically within the container. */

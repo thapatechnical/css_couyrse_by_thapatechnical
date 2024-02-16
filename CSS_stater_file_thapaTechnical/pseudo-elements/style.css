@@ -1,0 +1,102 @@
+/** ------------------------------------- -->
+/**  Pseudo Elements In CSS 
+/** ---------------------------------------- --> */
+
+/*? ::before Pseudo-Element: The ::before pseudo-element is used to insert content before the content of an element. It is often employed to add decorative elements, icons, or text before an element without modifying the actual HTML content */
+
+/* syntax:  */
+/*? selector::before {
+    content: "";
+     Additional CSS properties go here 
+} */
+
+/*? ::after Pseudo-Element: The ::after pseudo-element functions similarly to ::before, but it inserts content after the content of an element. It's often used for adding decorative elements, icons, or textual information after an element. */
+
+/* selector::after {
+    content: "";
+     Additional CSS properties go here
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost";
+}
+
+body {
+  background-color: #080a0c;
+  color: azure;
+  height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  max-width: 1320px;
+  padding: 64px 0;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  gap: 64px;
+}
+
+.grid-two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  text-align: left;
+  position: relative;
+  display: inline-block;
+  position: relative;
+}
+
+/* Before Pseudo element  */
+
+/* After Pseudo elements  */
+
+.hero-content p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 20px 0 40px 0;
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+}
+
+a {
+  background-color: transparent;
+  display: inline-block;
+  padding: 12px 32px;
+  text-decoration: none;
+  border-radius: 05px;
+  font-size: 24px;
+  font-weight: bold;
+  border: 1px solid #fff;
+  color: #fff;
+  width: 200px;
+  text-align: center;
+
+  /*? TRANSITION CODE STARTS HERE  */
+}
+
+/* .hero-content a:hover {
+  background-color: #fff;
+  color: #000;
+  width: 300px;
+} */
+
+/** ------------------------------------- -->
+  /**  INTERVIEW QUESTIONS
+  /** ---------------------------------------- --> */
+
+/*? 1: How can you use the ::before pseudo-element to insert a Font Awesome icon before the content of a h1 element?  */
+/* you can even add the icons  */

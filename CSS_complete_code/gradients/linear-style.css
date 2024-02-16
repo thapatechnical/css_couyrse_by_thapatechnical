@@ -1,0 +1,91 @@
+/** ------------------------------------- -->
+/**  LINEAR GRADIENTS
+/** ---------------------------------------- --> */
+
+/*? The linear-gradient() CSS function creates an image consisting of a progressive transition between two or more colors along a straight line */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  /* background-image: linear-gradient(red, yellow); */
+  /* background-image: linear-gradient(to left, red, yellow); */
+  /* background-image: linear-gradient(to top, red, yellow); */
+  /* background-image: linear-gradient(90deg, red, yellow); */
+  /* background-image: linear-gradient(270deg, red, yellow); */
+  /* background-image: linear-gradient(to top left, red, yellow); */
+  /* background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0.5),
+    rgba(255, 0, 0, 0.5)
+  ); */
+  /* background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  ); */
+  /* background-image: repeating-linear-gradient(45deg, #d2e0fb, #79ac78 50px); */
+  background-image: linear-gradient(
+      to right top,
+      rgba(5, 25, 55, 0.6),
+      rgba(0, 77, 122, 0.6),
+      rgba(0, 135, 147, 0.6),
+      rgba(0, 191, 114, 0.6),
+      rgba(168, 235, 18, 0.6)
+    ),
+    url("https://images.pexels.com/photos/3888151/pexels-photo-3888151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/**-----------------------
+/** Interview Question  
+/** ----------------------- */
+
+/*?  1: What are CSS gradients, and why are they useful in web design? */
+/* sol: CSS gradients are a way to create smooth transitions between two or more specified colors. They are useful in web design because they allow for the creation of visually appealing backgrounds, buttons, and text effects, enhancing the overall design and user experience. */
+
+/*? 2: Explain the difference between linear gradients and radial gradients in CSS. When would you use one over the other?
+sol: Linear gradients create a smooth transition along a straight line, such as from top to bottom or left to right. Radial gradients, on the other hand, create a circular transition from the center outward. You would use linear gradients for linear background effects like horizontal or vertical color transitions. Radial gradients are ideal for creating circular elements or radial backgrounds, such as buttons or circular divs.*/
+
+/*? 3: How can you create a diagonal linear gradient in CSS? 🚀  */
+/* background-image: linear-gradient(to bottom right, #004d7a, #a8eb12); */
+
+/*? 4: How can you create a transparent gradient in CSS? 🚀 */
+/* background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1)); */
+
+/*? 5:Can you create a gradient that transitions from multiple colors rather than just two? 🚀  */
+/* background-image: linear-gradient(
+  to right top,
+  #051937,
+  #004d7a,
+  #008793,
+  #00bf72,
+  #a8eb12
+); */
+
+/** -----------------------
+/** PROJECT
+/** ----------------------- */
+
+/*?  create a repeating linear gradient in CSS? */
+/* background-image: repeating-linear-gradient(45deg, #d2e0fb, #79ac78 45px); */
+
+/*? 2: Add color overlay on image?   */
+/* background-image: linear-gradient(
+    to right top,
+    rgba(5, 25, 55, 0.9),
+    rgba(0, 77, 122, 0.9),
+    rgba(0, 135, 147, 0.9),
+    rgba(0, 191, 114, 0.9),
+    rgba(168, 235, 18, 0.9)
+  ),
+  url("https://images.pexels.com/photos/3888151/pexels-photo-3888151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */

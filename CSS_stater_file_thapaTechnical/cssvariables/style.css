@@ -1,0 +1,111 @@
+/** ------------------------------------- -->
+/** CSS VARIABLES
+/** ---------------------------------------- --> */
+
+/*? CSS variables, also known as CSS custom properties, allow you to define reusable values in your CSS code. They provide more flexibility and maintainability to your styles.  */
+
+/*? 1: Declaration and Syntax: */
+/* Declare a CSS variable with the -- prefix followed by a name. For example: --main-color. */
+/* Assign a value to the variable using the var() function, like this: var(--main-color). */
+/* Variables can store various types of values, such as colors, numbers, text, and more. */
+/** --main-color: #3498db; */
+
+/*? 2: Variable Definition: */
+/*? You can define variables in various places, including at the root level, within a selector, or even inside a specific CSS rule. */
+/** :root { --main-color: #3498db;  } */
+
+/*? 3: Variable Usage: */
+/* Use the var keyword */
+/* .button {
+  ! background-color: var(--main-color);
+} */
+
+/** ---------------------------------------- --> */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost";
+}
+
+:root {
+  --main-color: #0062ff;
+  --supporting-color: #080a0c;
+  --font-color: #fff;
+  --bg-color: #080a0c;
+  --btn-bg-color: #fff;
+  --timepass-color: #fff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--timepass-color);
+  height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  max-width: 1320px;
+  padding: 64px 0;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  gap: 6.4rem;
+}
+
+.grid-two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero-content h1 {
+  text-align: left;
+  font-size: 54px;
+  /* font-family: "Urbanist"; */
+}
+
+#para-id {
+  color: pink;
+}
+
+.para-class {
+  color: #0062ff;
+}
+
+p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 2rem 0 4rem 0;
+  color: red;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.grid .hero-content a {
+  background-color: var(--bg-color);
+  border: 5px solid var(--timepass-color);
+  display: inline-block;
+  padding: 10px 32px;
+  text-transform: capitalize;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+a {
+  color: var(--timepass-color);
+  background-color: red;
+}

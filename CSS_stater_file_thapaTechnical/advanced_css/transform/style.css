@@ -1,0 +1,94 @@
+/** ------------------------------------- -->
+/**  TRANSFORM IN CSS
+/** ---------------------------------------- --> */
+
+/*? transform: translate()
+The translate() function is used to move an element along the X and Y axes within its containing block. It takes two values: one for horizontal translation (X-axis) and one for vertical translation (Y-axis).
+
+translate(x, y) - Moves the element by x units horizontally and y units vertically.  */
+
+/*? transform: scale()
+The scale() function takes one or two values:
+
+scale(x) - Scales the element by a factor of x along both the X and Y axes. A value of 1 is the original size, values greater than 1 make it larger, and values less than 1 make it smaller.
+scale(x, y) - Scales the element by a factor of x along the X-axis and y along the Y-axis. You can use different values for horizontal and vertical scaling. */
+
+/*? transform: rotate()
+The rotate() function takes one parameter:
+
+rotate(angle) - Specifies the angle of rotation in degrees. Positive values rotate clockwise, and negative values rotate counterclockwise. */
+
+/*? The skew() method skews an element along the X and Y-axis by the given angles.
+You can use this to create visually interesting effects, such as tilting or slanting elements. */
+
+/*? The transform-origin property in CSS allows you to specify the point around which a transformation should occur. It determines the origin point for transformation functions like rotate, scale, skew, and translate. Understanding how transform-origin works is crucial for controlling the position and behavior of transformed elements.
+
+Perspective to create a 3d world. It's a line between our eyes and computer screen. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+}
+
+body {
+  background-color: hsl(0, 0%, 85%);
+  background-color: #2b3033;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  box-shadow: inset 0 0 0 5px #4861ec;
+}
+
+.box {
+  /* width: 250px;
+    height: 100px; */
+  /* below three properties for scale and transform */
+  width: 250px;
+  height: 250px;
+  background-color: #4861ec;
+  box-shadow: 0 0 0px 15px #353f6d;
+  margin: 20px;
+  color: #fff;
+  font-size: 2rem;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 50%; */
+  transition-property: all;
+}
+
+.container img {
+  width: 100%;
+  width: 30%;
+  height: auto;
+  transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -ms-transition: all 1s linear;
+  -o-transition: all 1s linear;
+}
+
+/** ------------------------------------- -->
+/**  INTERVIEW QUESTIONS
+/** ---------------------------------------- --> */
+
+/*? 1: How can you use the translate transform function to move an element 50 pixels to the right and 20 pixels down? */
+/* .element { transform: translate(50px, 20px); } */
+
+/*? 2: Explain the scale transform function. How would you make an element twice its original size? */
+/* .element { transform: scale(2); } */
+
+/*? 3: How do you rotate an element 45 degrees clockwise using the rotate transform function? */
+/* .element {  transform: rotate(45deg); } */
+
+/*? 4: How can you combine multiple transform functions to perform complex transformations on an element? */
+/* .element { transform: scale(1.5) rotate(45deg) translate(20px, 30px); } */

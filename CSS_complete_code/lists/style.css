@@ -1,0 +1,70 @@
+/** ------------------------------------- -->
+/** CSS LIST STYLING 
+/** ---------------------------------------- --> */
+
+/*? In HTML, there are two main types of lists:
+unordered lists (<ul>) - the list items are marked with bullets
+ordered lists (<ol>) - the list items are marked with numbers or letters */
+
+/*? The list-style-type property specifies the type of list item marker. */
+
+/*? The list-style-image property specifies an image as the list item marker: */
+
+/*? The list-style-position property specifies the position of the list-item markers (bullet points). */
+
+/*? The list-style property is a shorthand property. It is used to set all the list properties in one declaration: */
+
+/* ul {
+  list-style: circle inside url("");
+} */
+
+/** ---------------------------------------- --> */
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+html {
+  font-family: "Urbanist";
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #5b697a 0%, #5b697a 50%),
+    linear-gradient(to bottom, #fafbfd 0%, #fafbfd 50%);
+  background-size: 100% 50%, 100% 50%;
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+}
+
+.lists {
+  width: 500px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+ul {
+  list-style-type: decimal;
+  list-style-position: inside;
+  /* list-style-image: url("../images/mario-run.gif"); */
+}
+
+li {
+  font-size: 32px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+  border: 2px solid #ed5656;
+}
+
+/* I will show the same during pseudo elements  */

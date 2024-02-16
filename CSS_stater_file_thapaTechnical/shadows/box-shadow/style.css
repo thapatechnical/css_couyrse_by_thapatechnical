@@ -1,0 +1,48 @@
+/** ------------------------------------- -->
+/** BOX SHADOW - CSS3
+/** ---------------------------------------- --> */
+
+/*? CSS3 Box Shadow is a new property to add shadow effects to any html Element. You can choose your own color, offset, blur, spread, offset and repetition. Unlike border, it not a part of CSS Box Model, thus doesn't effect the layout even if it is bigger in size. Also we can add multiple shadows with different colors and offsets. */
+
+/** ------------------------------------- -->
+/** IMPORTANT NOTES BOX SHADOW
+/** ---------------------------------------- --> */
+
+/*? Outer Box Shadow: Default box shadow is outer. x-offset and y-offset are compulsory properties, rest all are optional. */
+
+/*? Inner Box Shadow: To use inner box shadow, use inset. Inset is only required if shadow is inside. By-default shadow is outside. */
+
+/** ---------------------------------------- --> */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Urbanist";
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #191717;
+  display: grid;
+  place-items: center;
+}
+
+.shadow {
+  width: 300px;
+  height: 300px;
+  padding: 40px;
+  background-color: rgb(174, 68, 90);
+  border-radius: 50%;
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+
+  /*? box shadow here  */
+}

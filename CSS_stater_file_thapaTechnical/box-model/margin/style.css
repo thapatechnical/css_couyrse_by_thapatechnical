@@ -1,0 +1,104 @@
+/** ------------------------------------- -->
+/**  MARGIN IN CSS 
+/** ---------------------------------------- --> */
+
+/*? The `margin` property defines the space outside the element's border. It creates separation between the element and other elements in the layout. */
+
+/*? Margins create extra space around an element, unlike padding, which creates extra space within an element. */
+
+/** SYNTAX: */
+
+/*? Four Values: `margin: top right bottom left;` */
+/* margin: 50px 40px 30px 60px; */
+
+/* - `top`: Specifies the margin on the top side.
+- `right`: Specifies the margin on the right side.
+- `bottom`: Specifies the margin on the bottom side.
+- `left`: Specifies the margin on the left side. */
+
+/*? Three Values: margin: top right-left bottom; */
+/* margin: 50px 30px 60px; */
+
+/* - `top`: Specifies the margin on the top side.
+- `right-left`: Specifies the margin on the right and left sides.
+- `bottom`: Specifies the margin on the bottom side. */
+
+/*? Two Values: margin: top-bottom right-left; */
+/* margin: 50px 30px;
+
+- `top-bottom`: Specifies the margin on the top and bottom sides.
+- `right-left`: Specifies the margin on the right and left sides. */
+
+/*? One Value: margin: value; */
+/* margin: 50px; */
+/* If you provide a single value, it applies to all sides equally. */
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+html {
+  font-family: Urbanist;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      to right top,
+      rgba(5, 25, 55, 0.9),
+      rgba(0, 77, 122, 0.9),
+      rgba(0, 135, 147, 0.9),
+      rgba(0, 191, 114, 0.9),
+      rgba(168, 235, 18, 0.9)
+    ),
+    url("https://images.pexels.com/photos/3888151/pexels-photo-3888151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main-heading {
+  padding: 40px 0;
+  font-weight: bold;
+  font-size: 48px;
+  color: #f4f3f1;
+  text-align: center;
+}
+
+p {
+  line-height: 1.6;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+/* box model css  */
+.section-one {
+  padding: 50px;
+  width: 1200px;
+  background-color: #5e9de9;
+  color: #fff;
+}
+
+/** ------------------------------------------- -->
+/**  ADVANCED MARGIN IN CSS  + NOTES + TIPS
+/** ------------------------------------------- --> */
+
+/*? Auto Value: You can use margin: auto; to horizontally center an element within its container. This is commonly used for centering block-level elements. */
+
+/*? Negative Margins: You can use negative margin values to overlap elements or pull elements closer to each other. However, be cautious with negative margins, as they can lead to unexpected layouts and should be used sparingly. */
+
+/*? Collapsing Margins: When two adjacent margins meet, they can collapse into a single margin. This behavior is important to understand, especially when dealing with elements like paragraphs and headings. The larger of the two margins takes precedence. */
+
+/** ------------------------------------------- -->
+/**  INTERVIEW  + NOTES + TIPS
+/** ------------------------------------------- --> */
+
+/*? 1: What is margin in CSS, and how does it affect the layout of HTML elements? */
+
+/*? 2: How can you set margin for all sides (top, right, bottom, left) of an HTML element using shorthand notation? Provide an example. */
+/* You can set margin for all sides using shorthand notation */
+/* margin: 10px 20px 15px 30px; */
+
+/*? 3: How can you center-align an HTML element horizontally using margins? ⭐⭐⭐⭐⭐  */

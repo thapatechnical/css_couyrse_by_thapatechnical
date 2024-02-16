@@ -1,0 +1,92 @@
+<!--* ------------------------------------- -->
+<!--*  POSITION FIXED/STICKY IN CSS   -->
+<!--* ---------------------------------------- -->
+
+<!-- ? Fixed (position: fixed;):
+
+Elements with position: fixed; are positioned relative to the viewport, so they remain in the same position even when the page is scrolled.
+You can use the top, right, bottom, and left properties to specify the exact position. -->
+
+<!-- ?Sticky (position: sticky;):
+
+Elements with position: sticky; are initially positioned according to the normal flow, but they become "sticky" and stay within the viewport once they reach a specified scroll position.
+You can use the top, right, bottom, and left properties to set the stickiness behavior.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+        font-family: "Urbanist", sans-serif;
+      }
+
+      body {
+        display: grid;
+        place-items: center;
+      }
+
+      .main-section {
+        width: 100%;
+        text-align: center;
+        background-color: #1a2980;
+        color: #fff;
+        display: block;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+        /* position fixed start here  */
+        position: fixed;
+        top: 0;
+      }
+
+      #main-heading {
+        font-size: 6.2rem;
+        margin: 3rem 0;
+      }
+
+      .section-full {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to right, #26d0ce, #1a2980);
+      }
+
+      .section-full:nth-child(even) {
+        background: linear-gradient(to right, #56b4d3, #348f50);
+      }
+
+      /* Also again same for the Position Fixed  */
+
+      /* for sticky  */
+      .section-full a {
+        padding: 16px 32px;
+        background-color: #fff;
+        color: #1a2980;
+        font-size: 24px;
+        display: inline-block;
+        /* position: fixed; */
+        position: sticky;
+        top: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-section">
+      <h1 id="main-heading">CSS Positions - Fixed</h1>
+    </div>
+    <hr />
+    <div class="section-full"></div>
+    <div class="section-full"><a href="#">Join WhatsApp Now</a></div>
+    <div class="section-full"></div>
+    <div class="section-full"></div>
+  </body>
+</html>
